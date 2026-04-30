@@ -20,15 +20,9 @@ import { ProgressBar } from '@/components/ui/ProgressBar';
 import apiClient from '@/lib/api/client';
 import { GetRemixerStatsResponse } from '@/lib/types/api';
 import { User, Remix, Transaction } from '@/lib/types';
-import { formatCurrency, formatNumber, formatDate, formatXP } from '@/lib/utils/formatters';
+import { formatCurrency, formatDate, formatXP } from '@/lib/utils/formatters';
 import { cn, getLevelColor } from '@/lib/utils/helpers';
 import { 
-  BarChart, 
-  Bar, 
-  XAxis, 
-  YAxis, 
-  CartesianGrid, 
-  Tooltip, 
   ResponsiveContainer,
   Cell,
   PieChart as RePieChart,
@@ -395,18 +389,6 @@ interface TransactionItemProps {
 }
 
 const TransactionItem: React.FC<TransactionItemProps> = ({ transaction }) => {
-  const getActivityIcon = (): React.ElementType => {
-    switch (transaction.type) {
-      case 'buy':
-        return FiTrendingUp;
-      case 'sell':
-        return FiTrendingUp;
-      case 'royalty_payout':
-        return FiDollarSign;
-      default:
-        return FiRepeat;
-    }
-  };
 
   const getActivityColor = (): string => {
     switch (transaction.type) {
@@ -420,8 +402,6 @@ const TransactionItem: React.FC<TransactionItemProps> = ({ transaction }) => {
         return 'text-gray-500';
     }
   };
-
-  const Icon = getActivityIcon();
 
   return (
     <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-dark-300 transition-colors">

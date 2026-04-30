@@ -105,12 +105,20 @@ export const CreateRemixForm: React.FC<CreateRemixFormProps> = ({
       }, 200);
 
       const response = await apiClient.upload<CreateRemixResponse>('/remixes', formData);
-
-      clearInterval(progressInterval);
+      if (response.success) {
+              clearInterval(progressInterval);
       setUploadProgress(100);
 
       toast.success('Remix created successfully!');
       onSuccess?.();
+      } else {
+      clearInterval(progressInterval);
+      setUploadProgress(10);
+
+      toast.error('Remix creation faid!');
+      }
+
+
     } catch (error) {
       console.error('Upload error:', error);
       toast.error('Failed to create remix. Please try again.');

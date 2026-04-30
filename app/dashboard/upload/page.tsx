@@ -156,8 +156,6 @@ const onSubmit = async (data: UploadFormData): Promise<void> => {
   if (coverImage) formData.append('coverImage', coverImage);
 
   try {
-    // Make sure we're sending the auth token
-    const token = localStorage.getItem('accessToken');
     
     const response = await apiClient.upload<{ success: boolean; track: Track; bagsTx: string }>(
       '/tracks',

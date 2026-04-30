@@ -7,8 +7,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   FiMusic, 
   FiRepeat, 
-  FiDollarSign, 
-  FiTrendingUp,
+  FiDollarSign,
   FiUsers,
   FiPlus,
   FiX,

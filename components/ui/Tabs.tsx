@@ -37,7 +37,7 @@ const Tabs: React.FC<TabsProps> = ({
     underline: 'border-b border-gray-200 dark:border-gray-700',
   };
 
-  const getTabClassName = (item: TabItem, isActive: boolean): string => {
+  const getTabClassName = ( isActive: boolean): string => {
     const baseClasses = cn(
       'relative flex items-center justify-center gap-2 font-medium transition-all duration-200',
       'disabled:opacity-50 disabled:cursor-not-allowed',
@@ -91,7 +91,7 @@ const Tabs: React.FC<TabsProps> = ({
             type="button"
             onClick={() => !item.disabled && onChange(item.value)}
             disabled={item.disabled}
-            className={getTabClassName(item, isActive)}
+            className={getTabClassName( isActive)}
             aria-selected={isActive}
             role="tab"
           >

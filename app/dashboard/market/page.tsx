@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { 
-  FiTrendingUp, FiTrendingDown, FiStar,
-  FiBarChart2, FiActivity, FiSearch, FiUsers,
+  FiTrendingUp, FiStar,
+  FiBarChart2, FiActivity, FiSearch,
   FiArrowUp, FiArrowDown, FiDollarSign,
   FiRefreshCw, FiPlus, FiMinus
 } from 'react-icons/fi';
