@@ -24,7 +24,7 @@ import { formatCurrency, formatDate, formatXP } from '@/lib/utils/formatters';
 import { cn, getLevelColor } from '@/lib/utils/helpers';
 import { 
   ResponsiveContainer,
-  Cell,
+  // Cell,
   PieChart as RePieChart,
   Pie
 } from 'recharts';
@@ -158,12 +158,12 @@ export default function RemixerDashboard({ user }: RemixerDashboardProps) {
                       paddingAngle={2}
                       dataKey="value"
                     >
-                      {pieData.map((entry, index) => (
+                      {/* {pieData.map((entry, index) => (
                         <Cell 
                           key={`cell-${index}`} 
                           fill={COLORS[index % COLORS.length]} 
-                        />
-                      ))}
+                        />  
+                      ))} */}
                     </Pie>
                   </RePieChart>
                 </ResponsiveContainer>
