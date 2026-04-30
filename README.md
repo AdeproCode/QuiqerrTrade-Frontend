@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎧💹 QuiqerrTrade Market
 
-## Getting Started
+> **Turn Music Remixes Into Tradable Assets on Solana**
 
-First, run the development server:
+QuiqerrTrade Market is a decentralized application that transforms music remixes into tradable tokens. Creators upload original tracks, remixers create derivative versions that become tradable assets, and traders speculate on viral potential — all powered by AI and automated smart contract royalties.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**🏆 Built for the $1M Bags Hackathon 2026**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Solana](https://img.shields.io/badge/Solana-Devnet-blue?logo=solana)](https://solana.com)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://typescriptlang.org)
+[![MongoDB](https://img.shields.io/badge/MongoDB-8-green?logo=mongodb)](https://mongodb.com)
+[![OpenAI](https://img.shields.io/badge/AI-OpenAI-purple?logo=openai)](https://openai.com)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 What It Does
 
-## Learn More
+QuiqerrTrade Market creates a **music remix economy** where:
 
-To learn more about Next.js, take a look at the following resources:
+- 🎤 **Creators** upload original tracks and earn **50% royalties** forever
+- 🔁 **Remixers** create derivative versions that become **tradable tokens**
+- 📈 **Traders** buy/sell remix tokens speculating on **viral potential**
+- 🤖 **AI** predicts which remixes will go viral (0-100 score)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Every trade automatically distributes fees via smart contracts: **45% Creator | 45% Remixer | 10% Platform**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## ✨ Key Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🎵 Music Creation & Tokenization
+- Upload original tracks to **IPFS** (decentralized storage)
+- Automatic token creation via **Bags Protocol** on Solana
+- Cover image support with IPFS storage
+- Genre, BPM, and key metadata
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🔁 Remix Marketplace
+- Discover tracks available for remixing
+- Create remixes with custom styles (Night, Chill, Club, Acoustic, etc.)
+- Each remix becomes its own **tradable token**
+- Automated royalty split configuration
+
+### 📈 Live Trading Platform
+- Real-time price tracking with **interactive charts**
+- Buy, Sell, and Swap remix tokens
+- Order book simulation (asks & bids)
+- Portfolio tracking with P&L calculations
+- Market overview with trending, gainers, and losers
+
+### 🤖 AI-Powered Insights
+- **Viral Potential Prediction** (0-100 score)
+- Buy/Hold/Sell signals from GPT-4
+- Personalized remix suggestions
+- Trader insights and market analysis
+- Smart fallback logic when AI is unavailable
+
+### 🎮 Creator Economy
+- Leveling system (New → Rising → Viral → Top Creator)
+- XP-based progression
+- Badges and achievements
+- Creator and remixer dashboards
+- Earnings tracking and analytics
+
+### 🔐 Authentication
+- Email/password registration
+- Solana wallet connection (Phantom, Solflare)
+- JWT-based session management
+- Wallet signature verification
+
